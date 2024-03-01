@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="para(this)">click me</button>
+    <script>
+        // function* para(){
+        //     yield alert('salam')
+        //     yield alert('how are you')
+        //     yield alert('adam bash')
+        // }
+        // let x = para()
+        // x.next().value
+        // x.next().value
+        // x.next().value
+
+
+        let flag = 0
+        function para(s){
+            if(flag == 0){
+                alert('sama')
+            }else if(flag == 1){
+                alert(2)
+            }else{
+                alert('adam bash..')
+                s.remove()
+            }
+            flag++
+        }
+    </script>
+</body>
+</html>
